@@ -1,10 +1,15 @@
-import { combineReducers} from "redux";
+import {applyMiddleware, combineReducers, createStore} from "redux";
+import createSagaMiddleware from 'redux-saga'
 
-import { configureStore } from "@reduxjs/toolkit";
+import postsReducer from "./postsReducer"
+import { rootWatcher } from "./saga";
+
+const sagaMiddleware = createSagaMiddleware()
 
 const rootReducer = combineReducers({
-  });
-
-export const store = configureStore({
-    reducer: rootReducer
+    postsReducer
 })
+
+export const store = createStore(rootReducer, applyMiddleware(sagaMiddleware))
+
+sagaMiddleware.run(rootWatcher)
