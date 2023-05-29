@@ -1,12 +1,13 @@
 import React from "react";
 
-const Comment = ()=> {
+import { ListGroup } from 'react-bootstrap';
+const Comment = ({ comment }) => {
   return (
-    <div>
-        <div>email</div>
-        <div>text</div>
-    </div>
+      <ListGroup.Item>
+        <h5>{comment.email || 'No email'}</h5>
+        <p>{comment.body || 'No body'}</p>
+      </ListGroup.Item>
   );
-}
+};
 
 export default Comment

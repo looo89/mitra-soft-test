@@ -1,9 +1,9 @@
-import {Routes, Route } from 'react-router-dom';
-import AboutMe from '../../pages/aboutMe';
-import AboutUser from '../../pages/aboutUser';
-import PostsList  from '../../pages/postsList';
-import { ABOUT_ME_ROUTE, ABOUT_USER_ROUTE, POSTS_LIST_ROUTE } from '../../routes';
+import {Routes, Route } from 'react-router-dom'
+import AboutMe from '../../pages/aboutMe'
+import AboutUser from '../../pages/aboutUser'
+import { ABOUT_ME_ROUTE, ABOUT_USER_ROUTE, POSTS_LIST_ROUTE } from '../../routes'
 import Header from '../Header'
+import PostsList from '../../pages/postsList'
 
 const Layout = () => {
   
