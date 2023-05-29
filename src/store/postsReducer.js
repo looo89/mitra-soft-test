@@ -1,16 +1,23 @@
-const defaultState = {
-    posts: []
+import { GET_POSTS, SET_POSTS } from "./helpers/constans";
+
+
+const initialState = {
+  posts: [],
+  status: null,
+};
+
+const postsReducer = (state = initialState, {type, payload}) => {
+  switch (type) {
+    case SET_POSTS:
+      return {
+        ...state,
+        posts: [...payload],
+        status: 'fulfilled',
+      };
+    default: return state;
+  }
 }
 
-export const FETCH_POSTS = "FETCH_POSTS"
-export const SET_POSTS = "SET_POSTS"
-
-export default function postsReducer(state = defaultState, action) {
-    switch(action.type) {
-        case SET_POSTS:
-            return {...state, posts: action.payload}
-    }
-    return state
-}
-export const fetchPosts = () => ({type: FETCH_POSTS})
-export const setPosts = payload => ({type: SET_POSTS, payload})
+export default postsReducer;
+export const getPosts = () => ({type: GET_POSTS});
+export const setPosts = (payload) => ({type: SET_POSTS, payload});
