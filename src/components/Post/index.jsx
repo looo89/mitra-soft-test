@@ -18,8 +18,6 @@ const Post = ({title, text, id})=> {
       }
     };
 
-    console.log(333, comments)
-
   return (
     <div style={{border: "1px solid grey"}}>
         <div>title: {title}</div>
