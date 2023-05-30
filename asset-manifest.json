@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mitra-soft-test/static/css/main.345ec4e7.css",
+    "main.js": "/mitra-soft-test/static/js/main.a2aa3180.js",
+    "index.html": "/mitra-soft-test/index.html",
+    "main.345ec4e7.css.map": "/mitra-soft-test/static/css/main.345ec4e7.css.map",
+    "main.a2aa3180.js.map": "/mitra-soft-test/static/js/main.a2aa3180.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.345ec4e7.css",
+    "static/js/main.a2aa3180.js"
+  ]
+}
