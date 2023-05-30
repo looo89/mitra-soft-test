@@ -7,6 +7,10 @@ import Menu from '../Menu/index'
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+
+  const handleClose=()=>{
+    setOpen(false)
+  }
   
   return (
     <header style={{backgroundColor: '#f5f5f5'}}>
@@ -26,7 +30,7 @@ const Header = () => {
           </div>
         </Container>
       </Navbar>
-      <Menu open={open}/>
+      <Menu open={open} handleClose={handleClose}/>
     </header>
   );
 };
