@@ -2,7 +2,7 @@ import { GET_USER, SET_USER } from "./helpers/constans";
 
 
 const initialState = {
-  user: [],
+  user: null,
   status: null,
 };
 

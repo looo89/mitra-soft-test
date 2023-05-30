@@ -19,6 +19,7 @@ const Pagination = ({
               return (
                 <li key={number} className="page-item active">
                   <button
+                  style={{backgroundColor: '#01A09A'}}
                     onClick={() => paginate(number)}
                     className="page-link"
                   >
@@ -30,7 +31,7 @@ const Pagination = ({
             
             return (
               <li key={number} className="page-item">
-                <button onClick={() => paginate(number)} className="page-link">
+                <button onClick={() => paginate(number)} className="page-link"  style={{backgroundColor: '#f5f5f5'}}>
                   {number}
                 </button>
               </li>

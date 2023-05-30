@@ -9,19 +9,25 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   
   return (
-    <>
-      <Navbar>
+    <header style={{backgroundColor: '#f5f5f5'}}>
+      <Navbar class="navbar navbar-expand-lg">
         <Container>
-          <Button variant="outline-secondary navbar-toggler-icon p-2"
-                  size="lg"
-                  onClick={() => setOpen(!open)}
-                  aria-controls="example-collapse-text"
-                  aria-expanded={open}
+          <div>
+            <Button variant="outline-secondary navbar-toggler-icon p-3"
+                    size="lg"
+                    onClick={() => setOpen(!open)}
+                    aria-controls="example-collapse-text"
+                    aria-expanded={open}
+            />
+            <img 
+            style={{marginLeft: '60px'}}
+            src='https://mitrasoft.ru/wp-content/uploads/2021/08/logo-new.svg'
           />
+          </div>
         </Container>
       </Navbar>
       <Menu open={open}/>
-    </>
+    </header>
   );
 };
 

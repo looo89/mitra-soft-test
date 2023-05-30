@@ -78,7 +78,6 @@ const PostsList = () => {
   
   return (
     <Container>
-    
     <h1>Posts</h1>
       <div>
         <Search value={searchHandler}/>
@@ -108,4 +107,3 @@ const PostsList = () => {
 }
 
 export default PostsList
-

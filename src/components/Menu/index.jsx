@@ -7,7 +7,6 @@ import { NavLink } from 'react-router-dom';
 const Menu = ({ open }) => {
   
   return (
-
     <Nav
     activeKey={POSTS_LIST_ROUTE}
     onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
